@@ -6,7 +6,6 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%- metaTitle %></title>
-    <meta http-equiv="refresh" content="3; URL=https://portfolio-abduls-projects-81d49a99.vercel.app/" />
 
 
     <meta property="title" content="<%- metaTitle %>" />
@@ -26,6 +25,12 @@
     <meta name="twitter:description" content="<%- metaDescription %>" />
     <meta name="twitter:image" content="<%- metaImageURL %>" />
   </head>
+  <script>
+    if(window.location.href == 'https://abdul2801.github.io/'){
+      window.location.href = 'https://portfolio-abduls-projects-81d49a99.vercel.app/'
+    }
+
+  </script>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
