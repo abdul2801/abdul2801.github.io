@@ -118,6 +118,13 @@ const CONFIG = {
       companyLink: 'https://www.buildfast.co.in/',
     },
     {
+      company: 'Google Cloud',
+      position: 'Study Jam Facilitator',
+      from: 'November 2023',
+      to: 'January 2024',
+      companyLink: 'https://cloud.google.com/',
+    },
+    {
       company: 'OpenSource Club ',
       position: 'Sublead',
       from: 'December 2023',
