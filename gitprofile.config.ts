@@ -83,7 +83,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://docs.google.com/document/d/1Q8sqQeHeRDysYVNi16PrKlc3nXgKO0mUq2YNylnUswU/edit?usp=sharing', // Empty fileUrl will hide the `Download Resume` button.
+      './resume.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   // 20 only
   skills: [
