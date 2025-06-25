@@ -18,7 +18,7 @@ const CONFIG = {
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'updated', // Sort projects by 'stars' or 'updated'
-        limit: 10, // How many projects to display.
+        limit: 4, // How many projects to display.
         exclude: {
           forks: true, // Forked projects will not be displayed if set to true.
           projects: ['abdul2801/cpp'], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
@@ -35,21 +35,34 @@ const CONFIG = {
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Capture The Flag WebSite',
+          title: 'Packet Sniffer',
           description:
-            'A website for hosting CTFs and solving challenges with a intuitive UI and smooth animations. \n\n Tech Stack: React.js, MySQL, Docker, Nginx, TailwindCSS, Express.js and more.',
-          imageUrl:
-            'https://csyclub.iiitkottayam.ac.in/CSC_Logo.png',
-          link: 'https://ctf.iiitkottayam.ac.in/',
+            'Developed a packet sniffer in Rust using the C `Pcap` library for capturing raw network packets. Integrated a terminal user interface (TUI) with `Rattui` for real-time interactive packet data inspection.\n\nTech Stack: Rust, C, Pcap, Rattui.',
+          imageUrl: 'https://images.squarespace-cdn.com/content/v1/569805af1f4039853c5804f1/1526586326433-ER7GN1K932RALLWJENEC/SentryWire-Packet-Capture-Appliance-230-1.png?format=500w', // Replace with real image if available
+          link: 'https://github.com/abdul2801/sniffer',
         },
         {
-          title: 'Project Name',
+          title: 'QueueShopper - Distributed Order Processing System',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'Developed a distributed order processing system using Apache Kafka for message queuing and MySQL for persistence. Implemented producer-consumer architecture to ensure high throughput and fault tolerance in handling e-commerce transactions.\n\nTech Stack: Kafka, Node.js, MySQL.',
+          imageUrl: 'https://raw.githubusercontent.com/abdul2801/queueShopper/main/screenshot.png', // Replace with real image if available
+          link: 'https://github.com/abdul2801/queueShopper',
         },
+        {
+          title: 'Collaborative Code Editor',
+          description:
+            'Developed a real-time collaborative code editor with VSCode-like features. Utilized CRDT (Conflict-Free Replicated Data Types) with Yjs for distributed data synchronization and WebSockets for low-latency communication.\n\nTech Stack: React, Yjs, WebSockets.',
+          imageUrl: 'https://raw.githubusercontent.com/abdul2801/Collaborative-code-editor/main/image.png', // Replace with real image if available
+          link: 'https://github.com/abdul2801/Collaborative-code-editor',
+        },
+        {
+          title: 'Capture The Flag (CTF) Platform',
+          description:
+            'Built an interactive Capture the Flag (CTF) platform with a React frontend and Node.js backend. Integrated an admin interface for creating and managing challenges to enhance platform flexibility.\n\nTech Stack: React, Node.js.',
+          imageUrl: 'https://avatars.githubusercontent.com/u/129326094?v=4', // Assuming same image applies
+          link: 'https://ctf.iiitkottayam.ac.in/',
+        }
+
       ],
     },
   },
@@ -59,7 +72,7 @@ const CONFIG = {
     imageURL: '',
   },
   social: {
-    linkedin: 'abdul-2398a1272',
+    linkedin: 'abdul-ahmad-2398a1272',
     // twitter: 'arif_szn',
     // mastodon: 'arifszn@mastodon.social',
     // researchGate: '',
@@ -83,33 +96,52 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      '/resume.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      '/resume_new.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   // 20 only
   skills: [
+    'Rust',
+    'Java',
+    'C',
+    'C++',
     'JavaScript',
     'TypeScript',
     'React',
     'Node.js',
     'Express.js',
-    'MongoDB',
+    'Python',
+    'PostgreSQL',
     'MySQL',
+    'DB2',
     'Docker',
+    'Kubernetes',
+    'AWS (EC2, S3, Lambda)',
     'Nginx',
-    'TailwindCSS',
-    'Bootstrap',
-    'Material-UI',
+    'Celery',
+    'Redis',
+    'Linux',
     'Git',
     'GitHub',
-    'GitLab',
-    'Jira',
-    'Rust',
-    'Django',
-    'Python',
-    'Linux',
-   
+    'GitLab'
   ],
+
   experiences: [
+    {
+      company: 'Soundverse',
+      position: 'Devops And Backend Intern',
+      from: 'April 2025',
+      to: 'July 2025',
+      companyLink: 'https://www.soundverse.ai/',
+      
+    },
+    {
+      company: 'IIIT Hyderabad',
+      position: 'Research Intern',
+      from: 'June 2025',
+      to: 'July 2025',
+      companyLink: 'https://www.iiit.ac.in/',
+      
+    },
     {
       company: 'BuildFast',
       position: 'ReactJs Intern',
